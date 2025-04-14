@@ -13,6 +13,28 @@
 #ifndef PHILO_H
 # define PHILO_H
 
-# include "libft/libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <pthread.h>
+
+#define TRUE 1
+#define FALSE 0
+
+typedef struct s_data
+{
+    int		num_philos;
+    int		time_to_die;
+    int		time_to_eat;
+    int		time_to_sleep;
+    int		num_meals;
+}	t_data;
+
+void    ft_putstr(char *s);
+int     ft_putchar(char c);
+void    ft_putendl_fd(char *s, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putchar_fd(char c, int fd);
+
 
 #endif
